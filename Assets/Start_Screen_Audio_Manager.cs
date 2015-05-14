@@ -11,6 +11,8 @@ public class Start_Screen_Audio_Manager : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-	    
+	    if(currentSource.volume < 1){
+            Utilites.Audio_Lead_In(currentSource);
+        }
 	}
 }
